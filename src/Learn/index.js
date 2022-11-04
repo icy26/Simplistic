@@ -11,7 +11,13 @@ function Learn() {
 
     {/* CSS in JS - Styled Components */}
       <Simple />
+    
+    {/* Conditional Rendering, 2 Options */}
+    {false && (
       <Simple2 />
+    )}
+      
+    {true ? <Simple2 /> : null}
 
     </div>
   )

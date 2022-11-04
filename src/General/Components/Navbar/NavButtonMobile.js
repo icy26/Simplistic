@@ -6,7 +6,7 @@ export default class NavButtonMobile extends React.Component {
   state = {
     isToggled: false
   };
-
+  
   toggleMenu() {
     this.setState({ isToggled: !this.state.isToggled });
   }

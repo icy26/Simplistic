@@ -8,7 +8,6 @@ export const Bar = styled.nav`
   border: 1px solid #FF0000;
   display: flex;
   justify-content: space-between;
-  //align-items: center;
 
   @media only screen and (min-width: 720px) {
     /*desktop*/
@@ -29,34 +28,39 @@ export const NavButton = styled.button`
 
   border: 2px solid #0000FF;
   
-  @media only screen and (min-width: 720px) {
-    /*desktop*/
-    display: none;
-  }
 `;
 
 export const NavMenu = styled.div`
-    /*mobile*/
-    position: absolute;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 12vh;
-    border: 1px solid #0000FF;
+  /*mobile*/
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12vh;
+  border: 1px solid #0000FF;
   
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        display: none;
+  @media only screen and (min-width: 720px) {
+    /*desktop*/
+    position: static;
+    width: 60%;
+    height: 100%;
+    flex-direction: row;
+    margin-top: 0vh;
   }
 `;
 
 export const NavItem = styled.a`
   width: 100%;
-  height: 25%;
+  height: 20%;
   border: 1px solid #008000;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (min-width: 720px) {
+    /*desktop*/
+    width: 20%;
+    height: 100%;
+  }
 `;
