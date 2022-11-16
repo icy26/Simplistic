@@ -9,6 +9,6 @@ export const Big= styled.div`
 export const Each = styled.div`
 width: 100%;
 height: 25%;
-background-color: #C0C0C0;
-//border: 1px solid #FF0000;
+//background-color: #C0C0C0;
+border: 1px solid #FF0000;
 `;

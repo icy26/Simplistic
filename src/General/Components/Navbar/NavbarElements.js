@@ -5,9 +5,10 @@ export const Bar = styled.nav`
   position: fixed;
   width: 100%;
   height: 12vh;
-  border: 1px solid #FF0000;
   display: flex;
   justify-content: space-between;
+
+  background: #C0C0C0;
 
   @media only screen and (min-width: 720px) {
     /*desktop*/
