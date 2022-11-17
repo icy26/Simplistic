@@ -7,6 +7,8 @@ export const Bar = styled.nav`
   height: 12vh;
   display: flex;
   justify-content: space-between;
+  
+  z-index: 2;
 
   background: #C0C0C0;
 
