@@ -24,21 +24,32 @@ export default function Navbar() {
       {/* If mobile render opt1 else render opt2 */}
       {width < breakpoint ? <NavButtonMobile /> : 
         <NavMenu>
-          <NavItem href='/'>
-              Home
-            </NavItem>
-            <NavItem>
-              Get Started
-            </NavItem>
-            <NavItem>
-              The Process
-            </NavItem>
-            <NavItem>
-              Reviews
-            </NavItem>
-            <NavItem>
-              Contact Us
-            </NavItem>
+          <NavItem 
+            href='/'
+            activeClass="active" 
+            smooth
+            spy
+            to="home"
+          >
+            Home
+          </NavItem>
+          <NavItem 
+            activeClass="active" 
+            smooth
+            spy
+            to="get_started"
+          >
+            Get Started
+          </NavItem>
+          <NavItem>
+            The Process
+          </NavItem>
+          <NavItem>
+            Reviews
+          </NavItem>
+          <NavItem>
+            Contact Us
+          </NavItem>
         </NavMenu>
       }
       

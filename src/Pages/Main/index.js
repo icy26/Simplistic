@@ -8,6 +8,8 @@ export default function Main() {
 
     <Big>
       <Home />
+
+      <Each />
     </Big>
   )
 }

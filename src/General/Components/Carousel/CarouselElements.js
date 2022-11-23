@@ -14,7 +14,7 @@ overflow: hidden;
 export const EmblaViewport = styled.div`
 overflow: hidden;
 width: 100%;
-border: 5px solid #FF0000;
+border: 2px solid #FF0000;
 `;
 
 export const EmblaContainer = styled.div`

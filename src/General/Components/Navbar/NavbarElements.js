@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkS } from "react-scroll";
 
 export const Bar = styled.nav`
   /*mobile*/
@@ -53,7 +54,7 @@ export const NavMenu = styled.div`
   }
 `;
 
-export const NavItem = styled.a`
+export const NavItem = styled(LinkS)`
   width: 100%;
   height: 20%;
   border: 1px solid #008000;
