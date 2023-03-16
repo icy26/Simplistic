@@ -12,6 +12,7 @@ export const Bar = styled.nav`
   z-index: 2;
 
   background: #C0C0C0;
+  opacity: 0.9;
 
   @media only screen and (min-width: 720px) {
     /*desktop*/

@@ -9,10 +9,10 @@ export default function Navbar() {
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
 
     // Return a function from the effect that removes the event listener
-    return () => window.removeEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
   return (
@@ -26,23 +26,23 @@ export default function Navbar() {
         <NavMenu>
           <NavItem 
             href='/'
-            activeClass="active" 
+            activeClass='active' 
             smooth
             spy
-            to="home"
+            to='home'
           >
             Home
           </NavItem>
-          <NavItem 
-            activeClass="active" 
-            smooth
-            spy
-            to="get_started"
-          >
+          <NavItem>
             Get Started
           </NavItem>
-          <NavItem>
-            The Process
+          <NavItem
+            activeClass='active' 
+            smooth
+            spy
+            to='learn_more'
+          >
+            Learn More
           </NavItem>
           <NavItem>
             Reviews

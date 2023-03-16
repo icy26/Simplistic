@@ -3,41 +3,22 @@ import { Link as LinkS } from "react-scroll";
 
 export const Container = styled.div`
     position: relative;
-    padding-top: 12vh;
     height: 88vh;
-
-    // border: 1px solid #000000;
-`;
-
-export const Slogan = styled.b`
-    display: flex;
-    justify-content: center;
-    margin-top: 10vh;
-`;
-
-export const OptionContainer = styled.div`
-    height: 20vh;
-    display: flex;
-    justify-content: space-around;
-    
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around;
-    margin-top: 20vh;
-
-    border: 2px solid #FF0000;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        flex-direction: row;
-        margin-left: 18vw;
-        margin-right: 18vw;
-        margin-top: 40vh;
+        // Not sure if a height difference is needed
     }
-    
 `;
 
-export const Option = styled(LinkS)`
+export const Title = styled.b`
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+`;
+
+
+export const Temp = styled(LinkS)`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,10 +37,9 @@ export const Option = styled(LinkS)`
 
 export const Pad = styled.div`
     position: absolute;
+    height: 12vh;
     width: 100%;
     bottom: 0;
-
-    height: 12vh;
 
     border: 1px solid #800080;
 

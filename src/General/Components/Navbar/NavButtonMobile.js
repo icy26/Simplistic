@@ -22,14 +22,27 @@ export default class NavButtonMobile extends React.Component {
 
         {isToggled && (
           <NavMenu onClick={() => this.toggleMenu()}>
-            <NavItem href='/'>
+            <NavItem
+              href='/'
+              activeClass='active' 
+              smooth
+              spy
+              to='home'
+              onClick={() => this.toggleMenu()}
+            >
               Home
             </NavItem>
             <NavItem>
               Get Started
             </NavItem>
-            <NavItem>
-              The Process
+            <NavItem
+              activeClass='active' 
+              smooth
+              spy
+              to='learn_more'
+              onClick={() => this.toggleMenu()}
+            >
+              Learn More
             </NavItem>
             <NavItem>
               Reviews

@@ -1,37 +1,38 @@
 import React from 'react'
 import { Container, Slogan, OptionContainer, Option, Pad } from './HomeElements'
-import Carousel from '../../General/Components/Carousel'
+// import Carousel from '../../General/Components/Carousel'
 
 export default function Home() {
 
   return (
     <Container
-      id="home"
+      id='home'
     >
       <Slogan>
-        SLOGAN
+        SIMPLISTIC
       </Slogan>
 
-      <Carousel />
+      {/* <Carousel /> */}
 
       <OptionContainer>
-        <Option
-          activeClass="active" 
-          smooth
-          spy
-          to="get_started"
-        >
+        <Option>
           Get Started
         </Option>
-        <Option>
+        <Option
+          activeClass='active' 
+          smooth
+          spy
+          to='learn_more'
+        >
           Learn More
         </Option>
       </OptionContainer>
 
+      {/* Pad used for scrolling */}
       <Pad
-        // ref={myRef}
-        id="get_started"
+        id='learn_more'
       />
+
     </Container>
   )
 }

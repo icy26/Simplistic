@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { Big, Each } from './MainElements'
+import { Big } from './MainElements'
 import Home from '../Home'
+import LearnMore from '../LearnMore'
 
 export default function Main() {
   return (
 
     <Big>
       <Home />
-
-      <Each />
+      <LearnMore />
     </Big>
   )
 }
