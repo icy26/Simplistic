@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Slogan, OptionContainer, Option, Pad } from './HomeElements'
-// import Carousel from '../../General/Components/Carousel'
+import { LoginButton, LogoutButton } from '../../General/Auth/LoginLogoutButton'
 
 export default function Home() {
 
@@ -11,8 +11,6 @@ export default function Home() {
       <Slogan>
         SIMPLISTIC
       </Slogan>
-
-      {/* <Carousel /> */}
 
       <OptionContainer>
         <Option>
@@ -27,6 +25,9 @@ export default function Home() {
           Learn More
         </Option>
       </OptionContainer>
+
+      <LoginButton />
+      <LogoutButton />
 
       {/* Pad used for scrolling */}
       <Pad
