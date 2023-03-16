@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { Big, Each } from './MainElemenets'
-import Navbar from '../../General/Components/Navbar'
+import { Big } from './MainElements'
+import Home from '../Home'
+import LearnMore from '../LearnMore'
 
 export default function Main() {
   return (
-    
+
     <Big>
-        <Navbar />
-        <Each />
-        
+      <Home />
+      <LearnMore />
     </Big>
   )
 }
