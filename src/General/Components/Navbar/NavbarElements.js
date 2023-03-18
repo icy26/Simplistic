@@ -39,7 +39,6 @@ export const NavMenu = styled.div`
   /*mobile*/
   position: absolute;
   width: 100%;
-  height: 50vh;
   display: flex;
   flex-direction: column;
   margin-top: 12vh;
@@ -48,16 +47,17 @@ export const NavMenu = styled.div`
   @media only screen and (min-width: 720px) {
     /*desktop*/
     position: static;
-    width: 60%;
+    width: 75%;
     height: 100%;
     flex-direction: row;
     margin-top: 0vh;
+    justify-content: end;
   }
 `;
 
 export const NavItem = styled(LinkS)`
   width: 100%;
-  height: 20%;
+  height: 10vh;
   border: 1px solid #008000;
   display: flex;
   justify-content: center;
@@ -65,7 +65,7 @@ export const NavItem = styled(LinkS)`
 
   @media only screen and (min-width: 720px) {
     /*desktop*/
-    width: 20%;
+    width: 12vw;
     height: 100%;
   }
 `;

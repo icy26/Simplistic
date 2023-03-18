@@ -34,7 +34,6 @@ export const OptionContainer = styled.div`
         margin-right: 18vw;
         margin-top: 40vh;
     }
-    
 `;
 
 export const LoggedInOptionContainer = styled.div`
@@ -49,7 +48,6 @@ export const LoggedInOptionContainer = styled.div`
         justify-content: end;
         margin-right: 5vh;
     }
-    
 `;
 
 export const Option = styled(LinkS)`
@@ -83,23 +81,6 @@ export const LoggedInOption = styled(LinkS)`
         /*desktop*/
         height: 4vh;
         width: 16vw;
-    }
-`;
-
-export const LoginButton = styled.button`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 5vh;
-    width: 50vw;
-
-    border: 2px solid #0000FF;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 8vh;
-        width: 25vw;
     }
 `;
 
