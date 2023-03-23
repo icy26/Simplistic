@@ -1,6 +1,5 @@
 import React from 'react'
-import { Container, Slogan, OptionContainer, Option, Pad } from './HomeElements'
-// import Carousel from '../../General/Components/Carousel'
+import { Container, Slogan, BodyContainer, BodyWindow, OptionContainer, Option, Pad } from './HomeElements'
 
 export default function Home() {
 
@@ -12,21 +11,25 @@ export default function Home() {
         SIMPLISTIC
       </Slogan>
 
-      {/* <Carousel /> */}
+      <BodyContainer>
+        <BodyWindow>
 
-      <OptionContainer>
-        <Option>
-          Get Started
-        </Option>
-        <Option
-          activeClass='active' 
-          smooth
-          spy
-          to='learn_more'
-        >
-          Learn More
-        </Option>
-      </OptionContainer>
+        </BodyWindow>
+        <BodyWindow>
+
+        </BodyWindow>
+      </BodyContainer>
+
+        <OptionContainer>
+          <Option
+            activeClass='active'
+            smooth
+            spy
+            to='learn_more'
+          >
+            Learn More
+          </Option>
+        </OptionContainer>
 
       {/* Pad used for scrolling */}
       <Pad

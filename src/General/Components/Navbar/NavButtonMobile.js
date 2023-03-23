@@ -1,58 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { NavButton, NavMenu, NavItem } from './NavbarElements';
 
-export default class NavButtonMobile extends React.Component {
-  state = {
-    isToggled: false
-  };
-  
-  toggleMenu() {
-    this.setState({ isToggled: !this.state.isToggled });
-  }
+import { useAuth0 } from '@auth0/auth0-react';
 
-  render() {
-    const isToggled = this.state.isToggled;
+export default function NavButtonMobile() {
 
-    return (
-      <>
-        <NavButton onClick={() => this.toggleMenu()}>
+  const [isToggled, setIsToggled] = useState(false);
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+
+  return (
+    <>
+        <NavButton onClick={() => setIsToggled(!isToggled)}>
           <FaBars />
         </NavButton>
 
         {isToggled && (
-          <NavMenu onClick={() => this.toggleMenu()}>
+          <NavMenu>
             <NavItem
               href='/'
-              activeClass='active' 
+              activeClass='active'
               smooth
               spy
               to='home'
-              onClick={() => this.toggleMenu()}
+              onClick={() => setIsToggled(!isToggled)}
             >
               Home
             </NavItem>
-            <NavItem>
-              Get Started
-            </NavItem>
+
+            {!isAuthenticated
+              ?
+              <NavItem
+                // Calls 2 functions in 1 click 
+                onClick={() => {setIsToggled(!isToggled); loginWithRedirect()}}
+              >
+                Get Started
+              </NavItem>
+              :
+              null
+            }
+
             <NavItem
-              activeClass='active' 
+              activeClass='active'
               smooth
               spy
               to='learn_more'
-              onClick={() => this.toggleMenu()}
+              onClick={() => setIsToggled(!isToggled)}
             >
               Learn More
             </NavItem>
-            <NavItem>
-              Reviews
-            </NavItem>
-            <NavItem>
+            <NavItem
+              onClick={() => setIsToggled(!isToggled)}
+            >
               Contact Us
             </NavItem>
+
+            {!isAuthenticated
+              ?
+              null
+              :
+              <NavItem
+                // Calls 2 functions in 1 click 
+                onClick={() => {setIsToggled(!isToggled); logout()}}
+              >
+                Log Out
+              </NavItem>
+            }
+
           </NavMenu>
         )}
       </>
-    );
-  }
+  );
 }
