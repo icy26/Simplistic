@@ -1,11 +1,7 @@
 import React from 'react'
-import { Container, Slogan, OptionContainer, Option, LoggedInOptionContainer, LoggedInOption, Pad } from './HomeElements'
-
-import { useAuth0 } from "@auth0/auth0-react";
+import { Container, Slogan, BodyContainer, BodyWindow, OptionContainer, Option, Pad } from './HomeElements'
 
 export default function Home() {
-
-  const { loginWithRedirect, isAuthenticated, isLoading, user } = useAuth0();
 
   return (
     <Container
@@ -15,26 +11,16 @@ export default function Home() {
         SIMPLISTIC
       </Slogan>
 
-      {isAuthenticated
-        ?
-        <LoggedInOptionContainer>
-          <LoggedInOption
-            activeClass='active'
-            smooth
-            spy
-            to='learn_more'
-          >
-            Learn More
-          </LoggedInOption>
-        </LoggedInOptionContainer>
-        :
-        <OptionContainer>
-          <Option
-            onClick={() => loginWithRedirect()}
-          >
-            Get Started
-          </Option>
+      <BodyContainer>
+        <BodyWindow>
 
+        </BodyWindow>
+        <BodyWindow>
+
+        </BodyWindow>
+      </BodyContainer>
+
+        <OptionContainer>
           <Option
             activeClass='active'
             smooth
@@ -44,7 +30,6 @@ export default function Home() {
             Learn More
           </Option>
         </OptionContainer>
-      }
 
       {/* Pad used for scrolling */}
       <Pad

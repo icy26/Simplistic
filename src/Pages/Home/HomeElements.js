@@ -12,27 +12,32 @@ export const Container = styled.div`
 export const Slogan = styled.b`
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
+
+    margin-top: 4vh;
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        margin-top: 6vh;
+    }
 `;
 
 export const OptionContainer = styled.div`
-    height: 20vh;
+    //height: 20vh;
     display: flex;
     justify-content: space-around;
     
     flex-direction: column;
     align-items: center;
     align-content: space-around;
-    margin-top: 20vh;
+    //margin-top: 56vh;
 
-    border: 2px solid #FF0000;
+    border: 1px solid #FF0000;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
         flex-direction: row;
         margin-left: 18vw;
         margin-right: 18vw;
-        margin-top: 40vh;
     }
 `;
 
@@ -41,7 +46,7 @@ export const LoggedInOptionContainer = styled.div`
     justify-content: center;
     margin-top: 55vh;
 
-    border: 2px solid #FF0000;
+    border: 1px solid #FF0000;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -58,11 +63,11 @@ export const Option = styled(LinkS)`
     height: 5vh;
     width: 50vw;
 
-    border: 2px solid #0000FF;
+    border: 1px solid #0000FF;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 8vh;
+        height: 6vh;
         width: 25vw;
     }
 `;
@@ -75,7 +80,7 @@ export const LoggedInOption = styled(LinkS)`
     height: 4vh;
     width: 48vw;
 
-    border: 2px solid #0000FF;
+    border: 1px solid #0000FF;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -83,6 +88,31 @@ export const LoggedInOption = styled(LinkS)`
         width: 16vw;
     }
 `;
+
+export const BodyContainer = styled.div`
+    display: flex;
+
+    flex-direction: column;
+    height: 62vh;
+
+    border: 1px solid #FF0000;  
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        height: 60vh;
+        flex-direction: row;
+    }
+`
+export const BodyWindow = styled.div`
+    height: 100%;
+
+    border: 1px solid #0000FF;
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        width: 100%;
+    } 
+`
 
 export const Pad = styled.div`
     position: absolute;
