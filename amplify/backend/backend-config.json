@@ -1,0 +1,63 @@
+{
+  "api": {
+    "simplistic": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "simplistic94378271": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ],
+          "category": "api",
+          "resourceName": "simplistic"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_simplistic94378271_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "simplistic94378271"
+        }
+      ]
+    },
+    "AMPLIFY_function_simplistic94378271_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "simplistic94378271"
+        }
+      ]
+    },
+    "AMPLIFY_function_simplistic94378271_sesEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "simplistic94378271"
+        }
+      ]
+    }
+  }
+}
