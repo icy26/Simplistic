@@ -7,6 +7,7 @@ export const onCreateProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }
@@ -18,6 +19,7 @@ export const onUpdateProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }
@@ -29,6 +31,7 @@ export const onDeleteProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }

@@ -10,6 +10,7 @@ export const createProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }
@@ -24,6 +25,7 @@ export const updateProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }
@@ -38,6 +40,7 @@ export const deleteProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }

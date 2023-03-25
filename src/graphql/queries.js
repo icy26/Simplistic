@@ -7,6 +7,7 @@ export const getProspect = /* GraphQL */ `
       id
       name
       email
+      message
       createdAt
       updatedAt
     }
@@ -23,6 +24,7 @@ export const listProspects = /* GraphQL */ `
         id
         name
         email
+        message
         createdAt
         updatedAt
       }
