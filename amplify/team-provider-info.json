@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-simplistic-dev-144416-authRole",
+      "UnauthRoleArn": "arn:aws:iam::748946061520:role/amplify-simplistic-dev-144416-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::748946061520:role/amplify-simplistic-dev-144416-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-simplistic-dev-144416-deployment",
+      "UnauthRoleName": "amplify-simplistic-dev-144416-unauthRole",
+      "StackName": "amplify-simplistic-dev-144416",
+      "StackId": "arn:aws:cloudformation:eu-west-2:748946061520:stack/amplify-simplistic-dev-144416/30001e10-c989-11ed-96d2-0abf029fc6b0",
+      "AmplifyAppId": "d5gs5rumranl3"
+    },
+    "categories": {
+      "function": {
+        "simplistic94378271": {
+          "sesEmail": "icy.projects786@gmail.com",
+          "deploymentBucketName": "amplify-simplistic-dev-144416-deployment",
+          "s3Key": "amplify-builds/simplistic94378271-75446f51464c4166586b-build.zip"
+        }
+      },
+      "api": {
+        "simplistic": {}
+      }
+    }
+  }
+}
