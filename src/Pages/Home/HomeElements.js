@@ -28,8 +28,7 @@ export const OptionContainer = styled.div`
     
     flex-direction: column;
     align-items: center;
-    align-content: space-around;
-    //margin-top: 56vh;
+    margin-top: 2vh;
 
     border: 1px solid #FF0000;
 
@@ -102,7 +101,8 @@ export const BodyContainer = styled.div`
         height: 60vh;
         flex-direction: row;
     }
-`
+`;
+
 export const BodyWindow = styled.div`
     height: 100%;
 
@@ -112,7 +112,15 @@ export const BodyWindow = styled.div`
         /*desktop*/
         width: 100%;
     } 
-`
+`;
+
+export const Flex = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+
+    border: 1px solid #FF0000; 
+`;
 
 export const Pad = styled.div`
     position: absolute;
