@@ -117,9 +117,12 @@ export const BodyWindow = styled.div`
 export const Flex = styled.div`
     display: flex;
     justify-content: center;
-    margin-top: 4vh;
+    margin-top: 2vh;
 
-    border: 1px solid #FF0000; 
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        margin-top: 8vh;
+    }
 `;
 
 export const Pad = styled.div`

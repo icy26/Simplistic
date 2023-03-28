@@ -1,3 +1,4 @@
+import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react'
 import { Bar, Name, NavMenu, NavItem } from './NavbarElements.js'
 import NavButtonMobile from './NavButtonMobile.js'
@@ -6,6 +7,7 @@ export default function Navbar() {
 
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 720;
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth)
@@ -18,9 +20,10 @@ export default function Navbar() {
   return (
     <Bar>
       <Name href='/'>
-        Simplistic
+        Motor Sauce
       </Name>
 
+      {/* If mobile render opt1 else render opt2 */}
       {width < breakpoint ? <NavButtonMobile /> :
         <NavMenu>
           <NavItem
@@ -30,8 +33,20 @@ export default function Navbar() {
             spy
             to='home'
           >
-            Get Started
+            Home
           </NavItem>
+
+          {!isAuthenticated
+            ?
+            <NavItem
+              onClick={() => loginWithRedirect()}
+            >
+              Get Started
+            </NavItem>
+            :
+            null
+          }
+
           <NavItem
             activeClass='active'
             smooth
@@ -40,8 +55,24 @@ export default function Navbar() {
           >
             Learn More
           </NavItem>
+          <NavItem>
+            Contact Us
+          </NavItem>
+
+          {!isAuthenticated
+            ?
+            null
+            :
+            <NavItem
+              onClick={() => logout()}
+            >
+              Logout
+            </NavItem>
+          }
+
         </NavMenu>
       }
+
     </Bar>
   )
 }

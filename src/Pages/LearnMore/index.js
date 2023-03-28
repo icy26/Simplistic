@@ -1,28 +1,16 @@
 import React from 'react'
-import { Container, Title, Pad, Temp } from './LearnMoreElements'
+import { Container, Title, ContactBar } from './LearnMoreElements'
 
 export default function LearnMore() {
 
-  return (
-    <Container>
+    return (
+        <Container>
 
-        <Title>
-            Learn More
-        </Title>
+            <Title>
+                Development Options
+            </Title>
 
-        <Temp
-            activeClass='active' 
-            smooth
-            spy
-            to='next'
-        >
-            Next
-        </Temp>
-
-        <Pad
-            id='next'
-        />
-
-    </Container>
-  )
+            <ContactBar />
+        </Container>
+    )
 }
