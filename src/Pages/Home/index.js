@@ -14,13 +14,16 @@ export default function Home() {
 
       <BodyContainer>
         <BodyWindow>
-
-        </BodyWindow>
-        <BodyWindow>
           <Flex>
-            <b>
-              Register your interest
-            </b>
+            Choose a home for your business with “Simplistic”
+          </Flex>
+          <Flex>
+            We will build you state of the art website applications with your business and processes in mind
+          </Flex>
+        </BodyWindow>
+        <BodyWindow> 
+          <Flex>
+            Register your interest
           </Flex>
           <ContactForm />
         </BodyWindow>

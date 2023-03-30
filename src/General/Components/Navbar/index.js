@@ -1,6 +1,8 @@
 import React from 'react'
-import { Bar, Name, NavMenu, NavItem } from './NavbarElements.js'
+import { Bar, Name, NavMenu, NavItem, NavLogo } from './NavbarElements.js'
 import NavButtonMobile from './NavButtonMobile.js'
+import mLogo from '../../Images/mLogo.png'
+import dLogo from '../../Images/dLogo.png'
 
 export default function Navbar() {
 
@@ -17,9 +19,11 @@ export default function Navbar() {
 
   return (
     <Bar>
-      <Name href='/'>
-        Simplistic
-      </Name>
+      
+      {width < breakpoint ? <NavLogo src={mLogo} /> : <NavLogo src={dLogo} /> }
+      
+      {/* <LinkR to="/">  
+      </LinkR> */}
 
       {width < breakpoint ? <NavButtonMobile /> :
         <NavMenu>

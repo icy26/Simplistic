@@ -31,7 +31,7 @@ export const NavButton = styled.button`
   aspect-ratio: 1 / 1;
   font-size: 1.6rem;
 
-  border: 2px solid #0000FF;
+  border: 1px solid #0000FF;
   
 `;
 
@@ -65,6 +65,7 @@ export const NavItem = styled(LinkS)`
   align-items: center;
 
   background: #1f1e1f;
+  color: #ebe6f0;
   border: 1px solid #008000;
   
   @media only screen and (min-width: 720px) {

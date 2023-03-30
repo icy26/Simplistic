@@ -20,7 +20,7 @@ export const Outer = styled.div`
 export const ContactInput = styled.input`
     height: 18%;
     background: #1f1e1f;
-    color: #c8c4c8;
+    color: #ebe6f0;
 
     border: none;
     border-bottom: 1.5px solid #a09ea0;
@@ -42,14 +42,14 @@ export const ContactInput = styled.input`
 export const ContactSubmit = styled.button`
     height: 20%;
     background: #1f1e1f;
-    color: #e6e5e5;
+    color: #ebe6f0;
     font-size:;
 
     border: 1.5px solid #a09ea0;
 
     :hover {
-        background: #282628;
-      }
+        background: #3c3a3c;
+    }
 
     @media only screen and (min-width: 720px) {
         /*desktop*/

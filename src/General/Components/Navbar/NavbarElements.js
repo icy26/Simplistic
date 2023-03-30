@@ -70,19 +70,18 @@ export const NavItem = styled(LinkS)`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e6e5e5;
 
+  color: #ebe6f0;
   border-top: 1.5px solid #1a191a;
 
   :hover {
-    background: #282628;
+    background: #3c3a3c;
   }
 
   :link { text-decoration: none; }
   :visited { text-decoration: none; }
   :hover { text-decoration: none; }
   :active { text-decoration: none; }
-  
 
   @media only screen and (min-width: 720px) {
     /*desktop*/
@@ -90,5 +89,16 @@ export const NavItem = styled(LinkS)`
     height: 100%;
     border-left: 1.5px solid #1a191a;
   }
+`;
 
+export const NavLogo = styled.img`
+  /*mobile*/
+  height: 80%;
+  margin-left: 8vw;
+
+  @media only screen and (min-width: 720px) {
+    /*desktop*/
+    height: 80%;
+    margin-left: 4vw;
+  }
 `;

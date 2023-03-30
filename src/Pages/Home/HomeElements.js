@@ -17,26 +17,24 @@ export const Slogan = styled.b`
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        margin-top: 6vh;
+        margin-top: 4vh;
     }
 `;
 
 export const OptionContainer = styled.div`
-    //height: 20vh;
     display: flex;
     justify-content: space-around;
+    margin: 8%;
     
     flex-direction: column;
     align-items: center;
-    margin-top: 2vh;
-
-    border: 1px solid #FF0000;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
         flex-direction: row;
-        margin-left: 18vw;
-        margin-right: 18vw;
+        margin: 0;
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
 `;
 
@@ -59,15 +57,18 @@ export const Option = styled(LinkS)`
     justify-content: center;
     align-items: center;
 
-    height: 5vh;
-    width: 50vw;
+    height: 4.5vh;
+    width: 100%;
 
-    border: 1px solid #0000FF;
+    border: 1.5px solid #a09ea0;
+
+    :hover {
+        background: #3c3a3c;
+    }
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
         height: 6vh;
-        width: 25vw;
     }
 `;
 
@@ -92,9 +93,9 @@ export const BodyContainer = styled.div`
     display: flex;
 
     flex-direction: column;
-    height: 62vh;
+    height: 64vh;
 
-    border: 1px solid #FF0000;  
+    // border: 1px solid #FF0000;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -106,7 +107,7 @@ export const BodyContainer = styled.div`
 export const BodyWindow = styled.div`
     height: 100%;
 
-    border: 1px solid #0000FF;
+    //border: 1px solid #0000FF;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
