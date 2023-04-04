@@ -1,16 +1,15 @@
-import React from 'react'
-import { Container, Title, ContactBar } from './LearnMoreElements'
+// import React from 'react'
+// import { CardBg, CardLogo, CardText } from './LearnMoreElements'
+// import LogoOnly from '../../General/Images/logoOnly.png'
 
-export default function LearnMore() {
+// export default function Card() {
 
-    return (
-        <Container>
+//     return (
+//         <CardBg>
+//             <CardLogo src={LogoOnly} />
+//             <CardText>
 
-            <Title>
-                Development Options
-            </Title>
-
-            <ContactBar />
-        </Container>
-    )
-}
+//             </CardText>
+//         </CardBg>
+//     )
+// }

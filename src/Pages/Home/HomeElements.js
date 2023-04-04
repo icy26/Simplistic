@@ -126,6 +126,45 @@ export const Flex = styled.div`
     }
 `;
 
+export const Square = styled.div`
+    position: absolute;
+
+    top: 12vh;
+    height: 25vh;
+    width: 100vw;
+
+    background: #484232;
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        top: 10vh;
+        height: 80vh;
+        width: 36vw;
+    }
+`;
+
+export const Triangle = styled.div`
+    position: absolute;
+
+    top: 37vh;
+    width: 0; 
+    height: 0; 
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 10vh solid #484232;
+    
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        left: 36vw;
+        top: 10vh;
+        width: 0;
+        height: 0;
+        border-top: 40vh solid transparent;
+        border-bottom: 40vh solid transparent;
+        border-left: 8vw solid #484232;
+    }
+`;
+
 export const Pad = styled.div`
     position: absolute;
     width: 100%;
