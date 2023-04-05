@@ -10,7 +10,7 @@ export default function Home() {
     >
 
       <Slogan>
-        SIMPLISTIC
+        Modern Websites Made Simplistic
       </Slogan>
       
         <Square
@@ -44,7 +44,7 @@ export default function Home() {
             spy
             to='learn_more'
           >
-            Learn More
+            Our Service
           </Option>
       </div>
 

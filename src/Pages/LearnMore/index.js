@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Title, ContactBar, LMContainer, LMMid, LMLogo, LMBG, LMDivide, LMLeft, LMRight, LMEach, Icon, Text } from './LearnMoreElements'
+import { Container, Title, LMContainer, LMMid, LMLogo, LMBG, LMDivide, LMLeft, LMRight, LMEach, Icon, Text } from './LearnMoreElements'
 
 import LogoOnly from '../../General/Images/logoOnly.png'
 import Responsive from '../../General/Images/LMIcons/responsive.png'
@@ -28,7 +28,7 @@ export default function LearnMore() {
         <Container>
 
             <Title>
-                Development Options
+                 Our Service
             </Title>
 
             {width < breakpoint ?
@@ -70,7 +70,9 @@ export default function LearnMore() {
                                 <spam class="bold reactColour"> React</spam>
                             </Text>
                         </LMEach>
-                        <LMEach>
+                        <LMEach
+                            style={{paddingTop: '0.3vh'}}
+                        >
                             <Text
                                 style={{ textAlign: 'left' }}
                             >
@@ -79,7 +81,9 @@ export default function LearnMore() {
                             </Text>
                             <Icon src={Responsive} />
                         </LMEach>
-                        <LMEach>
+                        <LMEach
+                            style={{paddingTop: '0.3vh'}}
+                        >
                             <Icon src={Backend} />
                             <Text
                                 style={{ textAlign: 'right' }}
@@ -91,7 +95,9 @@ export default function LearnMore() {
                                 <span class="bold awsColour"> AWS</span>
                             </Text>
                         </LMEach>
-                        <LMEach>
+                        <LMEach
+                            style={{paddingTop: '0.3vh'}}
+                        >
                             <Text
                                 style={{ textAlign: 'left' }}
                             >
@@ -99,7 +105,9 @@ export default function LearnMore() {
                             </Text>
                             <Icon src={D_M} />
                         </LMEach>
-                        <LMEach>
+                        <LMEach
+                            style={{paddingTop: '0.3vh'}}
+                        >
                             <Icon
                                 src={Relations}
                                 style={{ height: '70%' }}

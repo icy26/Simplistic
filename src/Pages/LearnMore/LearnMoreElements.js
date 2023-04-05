@@ -4,7 +4,7 @@ export const Container = styled.div`
     position: relative;
     height: 125vh;
 
-    border: 1px solid white;
+    // border: 1px solid white;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -18,22 +18,10 @@ export const Title = styled.b`
     margin-top: 2vh;
 `;
 
-export const ContactBar = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 12vh;
-    bottom: 0;
-
-    border: 1px solid #800080;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 12vh;
-    }
-`;
-
 export const LMContainer = styled.div`
     display: flex;
+    margin-top: 2vh;
+
     flex-direction: column;
     height: 120vh;
 
@@ -41,7 +29,7 @@ export const LMContainer = styled.div`
         /*desktop*/
         flex-direction: row;
         height: 82vh;
-        margin-top: 2vh;
+        
     }
 `;
 
@@ -116,8 +104,8 @@ export const LMEach = styled.div`
     height: 14vh;
     margin-bottom: 7vh;
 
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -144,6 +132,5 @@ export const Text = styled.div`
     @media only screen and (min-width: 720px) {
         /*desktop*/
         padding: 2%;
-        font-size: 14px;
     }
 `;

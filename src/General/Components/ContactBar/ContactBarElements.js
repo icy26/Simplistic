@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    height: 20vh;
+    height: 15vh;
     margin-top: 5vh;
 
     @media only screen and (min-width: 720px) {
@@ -12,12 +12,34 @@ export const Container = styled.div`
 `;
 
 export const Left = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 
-    width: 35%;
-    height: 100%;
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 35%;
+        height: 100%;
+    }
+`;
+
+export const Middle = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 60%;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        width: 35%;
+        margin-top: 0;
+    }
 `;
 
 export const Right = styled.div`
@@ -25,15 +47,18 @@ export const Right = styled.div`
     flex-direction: column;
     justify-content: space-around;
 
+    width: 40%;
     margin-top: 2vh;
     margin-bottom: 2vh;
+
+    padding-left: 2vw;
+    border-left: 2px solid #a09ea0; 
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
         margin-top: 0;
-        margin-bottom: 0;
+        width: 30%;
     }
-
 `;
 
 export const Each = styled.div`
@@ -52,11 +77,6 @@ export const Icon = styled.img`
 
 export const Text = styled.text`
     margin-left: 2vw;
-    font-size: 10px;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        font-size: 12px;
-    }
+    font-size: 12px;
 `;
 

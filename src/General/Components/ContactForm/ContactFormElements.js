@@ -21,6 +21,7 @@ export const ContactInput = styled.input`
     height: 18%;
     background: #1f1e1f;
     color: #ebe6f0;
+    font-size: 16px;
 
     border: none;
     border-bottom: 1.5px solid #a09ea0;
@@ -43,7 +44,9 @@ export const ContactSubmit = styled.button`
     height: 20%;
     background: #1f1e1f;
     color: #ebe6f0;
-    font-size:;
+
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
 
     border: 1.5px solid #a09ea0;
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Left, Right, Each, Icon, Text } from './ContactBarElements'
+import { Container, Left, Right, Each, Icon, Text, Middle } from './ContactBarElements'
 
 import Instagram from '../../Images/instagram.png'
 import At from '../../Images/at.png'
@@ -12,25 +12,20 @@ export default function ContactBar() {
                 <text>
                     Simplistic
                 </text>
-
             </Left>
-            <Right
-                style={{width: '35%'}}
-            >
+            <Middle>
                 <Each>
                     <Icon src={Instagram}/>
                     <Text>Simplistic</Text>
                 </Each>
                 <Each>
                     <Icon src={At}/>
-                    <Text>contact
-                        <br />
-                        @simplistic.com</Text>
+                    <Text>
+                        contact@simplistic.com
+                    </Text>
                 </Each>
-            </Right>
-            <Right
-                style={{width: '30%', borderLeft: '2px solid #a09ea0'}}
-            >
+            </Middle>
+            <Right>
                 <Text>Terms & Conditions</Text>
                 <Text>Privacy Notice</Text>
             </Right>

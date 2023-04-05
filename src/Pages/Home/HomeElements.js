@@ -12,13 +12,7 @@ export const Container = styled.div`
 export const Slogan = styled.b`
     display: flex;
     justify-content: center;
-
     margin-top: 4vh;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        margin-top: 4vh;
-    }
 `;
 
 export const Option = styled(LinkS)`

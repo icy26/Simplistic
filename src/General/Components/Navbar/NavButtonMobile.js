@@ -31,7 +31,7 @@ export default function NavButtonMobile() {
               to='learn_more'
               onClick={() => setIsToggled(!isToggled)}
             >
-              Learn More
+              Our Service
             </NavItem>
           </NavMenu>
         )}

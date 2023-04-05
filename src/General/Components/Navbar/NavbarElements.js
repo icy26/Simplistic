@@ -70,7 +70,7 @@ export const NavItem = styled(LinkS)`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   color: #ebe6f0;
   border-top: 1.5px solid #1a191a;
 

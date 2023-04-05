@@ -39,7 +39,7 @@ export default function Navbar() {
             spy
             to='learn_more'
           >
-            Learn More
+            Our Service
           </NavItem>
         </NavMenu>
       }
