@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Slogan, BodyContainer, BodyWindow, OptionContainer, Option, Pad, Square, Triangle, Flex } from './HomeElements'
+import { Container, Slogan, BodyContainer, BodyWindow, Option, Pad, Square, Triangle, Flex } from './HomeElements'
 import ContactForm from '../../General/Components/ContactForm'
 
 export default function Home() {
@@ -20,10 +20,8 @@ export default function Home() {
           style={{zIndex: '0'}}
         />
 
-        <div style={{position: 'absolute', width: '100vw'}}>
-        <BodyContainer
-          style={{zIndex: '1'}}
-        >
+        <div style={{position: 'absolute', zIndex: '1', width: '100vw'}}>
+        <BodyContainer>
           <BodyWindow>
             <Flex>
               Choose a home for your business with “Simplistic”
@@ -40,7 +38,6 @@ export default function Home() {
           </BodyWindow>
         </BodyContainer>
 
-        <OptionContainer>
           <Option
             activeClass='active'
             smooth
@@ -49,7 +46,6 @@ export default function Home() {
           >
             Learn More
           </Option>
-        </OptionContainer>
       </div>
 
       {/* Pad used for scrolling */}

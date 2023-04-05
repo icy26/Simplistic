@@ -1,15 +1,11 @@
 import styled from 'styled-components';
-//import { Link as LinkS } from "react-scroll";
 
 export const Container = styled.div`
     position: relative;
-    height: 88vh;
-
-    // border: 1px solid #FF0000;
+    height: 100vh;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 88vh;
     }
 `;
 
@@ -22,9 +18,8 @@ export const Title = styled.b`
 export const ContactBar = styled.div`
     position: absolute;
     width: 100%;
-    bottom: 0;
-
     height: 12vh;
+    bottom: 0;
 
     border: 1px solid #800080;
 
@@ -36,13 +31,14 @@ export const ContactBar = styled.div`
 
 export const LMContainer = styled.div`
     display: flex;
-
-    // border: 1px solid #fce303;
+    flex-direction: column;
+    height: 120vh;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 68vh;
-        margin-top: 3vh;
+        flex-direction: row;
+        height: 82vh;
+        margin-top: 2vh;
     }
 `;
 
@@ -52,79 +48,61 @@ export const LMMid = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 0.5;
-
-    // border: 1px solid #FF0000;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 72vh;
-        width: 100%;
-      }
+    height: 82vh;
+    width: 100%;
 `;
 
 export const LMBG = styled.div`
     position: absolute;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 
-    // border: 1px solid #FF0000;
+    height: 120vh;
+    width: 100%;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 72vh;
+        flex-direction: row;
+        height: 82vh;
         width: 100%;
       }
 `;
 
 export const LMLogo = styled.img`
-    height: 25%;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 40%;
-    }
+    height: 30%;
 `;
 
 export const LMDivide = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    // border: 1px solid #0000FF;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 100%;
-        width: 50%;
-    }
+    height: 100%;
+    width: 50%;
 `;
 
 export const LMLeft = styled.div`
-    display: flex;
-    
-    border-top: 16vh solid #484232;
-    border-right: 3vw solid transparent;
-
-    margin-right: 10%;
+    border-top: 14vh solid #484232;
+    border-right: 4vw solid transparent;
+    margin-right: 17vw;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 25%;
+        border-top: 20vh solid #484232;
+        border-right: 4vw solid transparent;
+        margin-right: 10%;
+        margin-bottom: 8vh;
     }
 `;
 
 export const LMRight = styled.div`
-    display: flex;
-    
-    border-bottom: 16vh solid #484232;
-    border-left: 3vw solid transparent;
-
-    margin-left: 10%;
+    border-bottom: 14vh solid #484232;
+    border-left: 4vw solid transparent;
+    margin-left: 17vw;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 25%;
+        border-bottom: 20vh solid #484232;
+        border-left: 4vw solid transparent;
+        margin-left: 10%;
+        margin-bottom: 8vh;
     }
 `;
 
@@ -132,14 +110,18 @@ export const LMEach = styled.div`
     display: flex;
     align-items: center;
 
+    height: 14vh;
+    margin-bottom: 7vh;
+
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 30%;
+        height: 20vh;
+        margin-bottom: 8vh;
     }
 `;
 
 export const Icon = styled.img`
-    height: 25%;
+    height: 100%;
     
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -148,7 +130,6 @@ export const Icon = styled.img`
 `;
 
 export const Text = styled.div`
-    //border: 1px solid #0000FF;
     
     @media only screen and (min-width: 720px) {
         /*desktop*/
