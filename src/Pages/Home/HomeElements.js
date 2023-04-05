@@ -21,44 +21,16 @@ export const Slogan = styled.b`
     }
 `;
 
-export const OptionContainer = styled.div`
-    display: flex;
-    justify-content: space-around;
-    margin: 8%;
-    
-    flex-direction: column;
-    align-items: center;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        flex-direction: row;
-        margin: 0;
-        margin-left: 25vw;
-        margin-right: 25vw;
-    }
-`;
-
-export const LoggedInOptionContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    margin-top: 55vh;
-
-    border: 1px solid #FF0000;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        justify-content: end;
-        margin-right: 5vh;
-    }
-`;
-
 export const Option = styled(LinkS)`
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 4.5vh;
-    width: 100%;
+    width: 84vw;
+    margin-left: 8vw;
+    margin-right: 8vw; 
+    margin-top: 6vh;
 
     border: 1.5px solid #a09ea0;
 
@@ -69,23 +41,9 @@ export const Option = styled(LinkS)`
     @media only screen and (min-width: 720px) {
         /*desktop*/
         height: 6vh;
-    }
-`;
-
-export const LoggedInOption = styled(LinkS)`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 4vh;
-    width: 48vw;
-
-    border: 1px solid #0000FF;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 4vh;
-        width: 16vw;
+        width: 40vw;
+        margin-left: 30vw;
+        margin-right: 30vw; 
     }
 `;
 
@@ -106,8 +64,6 @@ export const BodyContainer = styled.div`
 
 export const BodyWindow = styled.div`
     height: 100%;
-
-    //border: 1px solid #0000FF;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -138,7 +94,7 @@ export const Square = styled.div`
     @media only screen and (min-width: 720px) {
         /*desktop*/
         top: 10vh;
-        height: 80vh;
+        height: 90vh;
         width: 36vw;
     }
 `;
@@ -159,20 +115,17 @@ export const Triangle = styled.div`
         top: 10vh;
         width: 0;
         height: 0;
-        border-top: 40vh solid transparent;
-        border-bottom: 40vh solid transparent;
-        border-left: 8vw solid #484232;
+        border-top: 45vh solid transparent;
+        border-bottom: 45vh solid transparent;
+        border-left: 10vw solid #484232;
     }
 `;
 
 export const Pad = styled.div`
     position: absolute;
     width: 100%;
-    bottom: 0;
-
     height: 12vh;
-
-    border: 1px solid #800080;
+    bottom: 0;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
