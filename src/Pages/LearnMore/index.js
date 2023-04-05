@@ -62,7 +62,7 @@ export default function LearnMore() {
                                 src={Webdes}
                             />
                             <Text
-                                style={{ textAlign: 'left' }}
+                                style={{ textAlign: 'right' }}
                             >
                                 Sleek frontend components designed for that modern touch
                                 <br />
@@ -105,7 +105,7 @@ export default function LearnMore() {
                                 style={{ height: '70%' }}
                             />
                             <Text
-                                style={{ textAlign: 'left' }}
+                                style={{ textAlign: 'right' }}
                             >
                                 We honour the relationships we build with our clients
                                 <br />
@@ -210,8 +210,6 @@ export default function LearnMore() {
                     </LMDivide>
                 </LMContainer>
             }
-
-            {/* <ContactBar /> */}
         </Container>
     )
 }

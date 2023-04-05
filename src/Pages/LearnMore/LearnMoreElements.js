@@ -2,10 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     position: relative;
-    height: 100vh;
+    height: 125vh;
+
+    border: 1px solid white;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
+        height: 90vh;
     }
 `;
 
@@ -113,10 +116,16 @@ export const LMEach = styled.div`
     height: 14vh;
     margin-bottom: 7vh;
 
+    margin-left: 2vw;
+    margin-right: 2vw;
+
     @media only screen and (min-width: 720px) {
         /*desktop*/
         height: 20vh;
         margin-bottom: 8vh;
+
+        margin-left: 0;
+        margin-right: 0;
     }
 `;
 
@@ -130,6 +139,7 @@ export const Icon = styled.img`
 `;
 
 export const Text = styled.div`
+    font-size: 14px;
     
     @media only screen and (min-width: 720px) {
         /*desktop*/
