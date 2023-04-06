@@ -96,7 +96,7 @@ export const Square = styled.div`
 export const Triangle = styled.div`
     position: absolute;
 
-    top: 37vh;
+    top: 36.99vh;
     width: 0; 
     height: 0; 
     border-left: 50vw solid transparent;
