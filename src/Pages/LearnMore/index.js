@@ -28,7 +28,7 @@ export default function LearnMore() {
         <Container>
 
             <Title>
-                 Our Service
+                 
             </Title>
 
             {width < breakpoint ?
@@ -55,7 +55,6 @@ export default function LearnMore() {
                             >
                                 We work one-to-one with you, to design solutions 
                                 <span class="bold reactColour"> tailored </span>
-                                <br />
                                 to your business & processes
                             </Text>
                             <Icon src={Conversation} />
@@ -109,7 +108,8 @@ export default function LearnMore() {
                                 style={{ textAlign: 'left' }}
                             >
                                 We will take care of your deployment & maintenance ensuring your website is
-                                <span class="bold sColour"> live 24/7</span>
+                                <br />
+                                <span class="bold sColour">live 24/7</span>
                             </Text>
                             <Icon src={D_M} />
                         </LMEach>

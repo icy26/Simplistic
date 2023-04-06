@@ -108,7 +108,7 @@ export const LMEach = styled.div`
     margin-left: 3vw;
     margin-right: 3vw;
 
-    // border: 1px solid red;
+    border: 0.5px solid transparent;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
