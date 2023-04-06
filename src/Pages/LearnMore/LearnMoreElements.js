@@ -100,6 +100,7 @@ export const LMRight = styled.div`
 export const LMEach = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     height: 14vh;
     margin-bottom: 7vh;
@@ -107,11 +108,14 @@ export const LMEach = styled.div`
     margin-left: 3vw;
     margin-right: 3vw;
 
+    // border: 1px solid red;
+
     @media only screen and (min-width: 720px) {
         /*desktop*/
+        justify-content: space-evenly;
+
         height: 20vh;
         margin-bottom: 8vh;
-
         margin-left: 0;
         margin-right: 0;
     }
@@ -122,15 +126,11 @@ export const Icon = styled.img`
     
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 100%;
+        // height: 90%;
     }
 `;
 
 export const Text = styled.div`
     font-size: 14px;
-    
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        padding: 2%;
-    }
+    font-align: left;
 `;

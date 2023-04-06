@@ -53,7 +53,10 @@ export default function LearnMore() {
                             <Text
                                 style={{ textAlign: 'left' }}
                             >
-                                Stay involved in the design & development process
+                                We work one-to-one with you, to design solutions 
+                                <span class="bold reactColour"> tailored </span>
+                                <br />
+                                to your business & processes
                             </Text>
                             <Icon src={Conversation} />
                         </LMEach>
@@ -64,15 +67,19 @@ export default function LearnMore() {
                             <Text
                                 style={{ textAlign: 'right' }}
                             >
-                                Sleek frontend components designed for that modern touch
+                                Innovative designs driven by 
                                 <br />
-                                Powered by
-                                <spam class="bold reactColour"> React</spam>
+                                your brands aesthetics
+                                <br />
+                                <text
+                                    style={{fontSize: '12px'}}
+                                >
+                                    Powered by
+                                    <spam class="reactColour"> React</spam>
+                                </text>
                             </Text>
                         </LMEach>
-                        <LMEach
-                            style={{paddingTop: '0.3vh'}}
-                        >
+                        <LMEach>
                             <Text
                                 style={{ textAlign: 'left' }}
                             >
@@ -81,43 +88,42 @@ export default function LearnMore() {
                             </Text>
                             <Icon src={Responsive} />
                         </LMEach>
-                        <LMEach
-                            style={{paddingTop: '0.3vh'}}
-                        >
+                        <LMEach>
                             <Icon src={Backend} />
                             <Text
-                                style={{ textAlign: 'right' }}
+                                style={{textAlign: 'right'}}
                             >
-                                Backend options including Prospect Email Contact
-                                & Authentication all setup in the cloud
-                                <br />
+                            Cloud based service options including
+                            <br />
+                            Email Contact & Authentication
+                            <br />
+                            <text 
+                                style={{fontSize: '12px'}}
+                            >
                                 Powered by
-                                <span class="bold awsColour"> AWS</span>
+                                <span class="awsColour"> AWS</span></text>
                             </Text>
                         </LMEach>
-                        <LMEach
-                            style={{paddingTop: '0.3vh'}}
-                        >
+                        <LMEach>
                             <Text
                                 style={{ textAlign: 'left' }}
                             >
-                                Sit back whilst your deployment & maintenance is taken care of
+                                We will take care of your deployment & maintenance ensuring your website is
+                                <span class="bold sColour"> live 24/7</span>
                             </Text>
                             <Icon src={D_M} />
                         </LMEach>
-                        <LMEach
-                            style={{paddingTop: '0.3vh'}}
-                        >
+                        <LMEach>
                             <Icon
                                 src={Relations}
-                                style={{ height: '70%' }}
+                                style={{ height: '60%' }}
                             />
                             <Text
                                 style={{ textAlign: 'right' }}
                             >
-                                We honour the relationships we build with our clients
-                                <br />
-                                <span class="bold warningColour">NO hidden fees</span>
+                                We are committed to delivering a
+                                <span class="bold warningColour"> first class service </span>
+                                & take pride in the relationships we build with our customers
                             </Text>
                         </LMEach>
                     </div>
@@ -147,13 +153,14 @@ export default function LearnMore() {
                     </LMBG>
 
                     <LMDivide
-                        style={{ zIndex: '1', marginLeft: '2vw', marginRight: '6vw' }}
+                        style={{ zIndex: '1', marginLeft: '1vw', marginRight: '6vw' }}
                     >
                         <LMEach>
-                            <Text
-                                style={{ textAlign: 'left' }}
-                            >
-                                Stay involved in the design & development process
+                            <Text>
+                                We work one-to-one with you, to design solutions
+                                <br />
+                                <span class="bold sColour"> tailored </span>
+                                to your business & processes
                             </Text>
                             <Icon src={Conversation} />
                         </LMEach>
@@ -161,58 +168,62 @@ export default function LearnMore() {
                             <Icon
                                 src={Webdes}
                             />
-                            <Text
-                                style={{ textAlign: 'left' }}
-                            >
-                                Sleek frontend components designed for that modern touch
+                            <Text>
+                                Innovative designs driven by your brands aesthetics
                                 <br />
-                                Powered by
-                                <spam class="bold reactColour"> React</spam>
+                                <text
+                                    style={{fontSize: '12px'}}
+                                >
+                                    Powered by
+                                    <spam class="reactColour"> React</spam>
+                                </text>
                             </Text>
                         </LMEach>
                         <LMEach>
-                            <Text
-                                style={{ textAlign: 'left' }}
-                            >
-                                Sit back whilst your deployment & maintenance is taken care of
+                            <Text>
+                                We will take care of your deployment & maintenance
+                                <br />
+                                ensuring your website is
+                                <span class="bold sColour"> live 24/7</span>
                             </Text>
                             <Icon src={D_M} />
                         </LMEach>
                     </LMDivide>
                     <LMDivide
-                        style={{ zIndex: '1', marginTop: '6vh', marginLeft: '6vw', marginRight: '2vw' }}
+                        style={{ zIndex: '1', marginTop: '6vh', marginLeft: '6vw', marginRight: '1vw' }}
                     >
                         <LMEach>
                             <Icon src={Responsive} />
-                            <Text
-                                style={{ textAlign: 'left' }}
-                            >
+                            <Text>
                                 <span class="bold sColour">Fully responsive </span>
                                 designs allowing compatibility for users on all devices
                             </Text>
                         </LMEach>
                         <LMEach>
-                            <Text
-                                style={{ textAlign: 'right' }}
-                            >
-                                Backend options including Prospect Email Contact
-                                & Authentication all setup in the cloud
+                            <Text>
+                                Cloud based service options including
                                 <br />
-                                Powered by
-                                <span class="bold awsColour"> AWS</span>
+                                Email Contact & Authentication
+                                <br />
+                                <text
+                                    style={{fontSize: '12px'}}
+                                >
+                                    Powered by
+                                    <span class="awsColour"> AWS</span>
+                                </text>
                             </Text>
                             <Icon src={Backend} />
                         </LMEach>
                         <LMEach>
                             <Icon
                                 src={Relations}
+                                style={{height: '70%'}}
                             />
                             <Text
-                                style={{ textAlign: 'right' }}
-                            >
-                                We honour the relationships we build with our clients
-                                <br />
-                                <span class="bold warningColour">NO hidden fees</span>
+                            style={{paddingLeft: '1vw'}}>
+                                We are committed to delivering a
+                                <span class="bold sColour"> first class service </span>
+                                and take pride in the relationships built with our customers
                             </Text>
                         </LMEach>
                     </LMDivide>
