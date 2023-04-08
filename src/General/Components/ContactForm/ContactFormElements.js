@@ -3,17 +3,18 @@ import styled from 'styled-components';
 export const Outer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 8%;
-    margin-right: 8%;
     justify-content: space-between;
 
     height: 24vh;
     margin-top: 2vh;
+    margin-left: 8%;
+    margin-right: 8%;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
         height: 36vh;
-        margin-top: 4vh;
+        // margin-top: 8vh;
+        // margin-left: 12vw;
     }
 `;
 
@@ -43,6 +44,7 @@ export const ContactInput = styled.input`
 export const ContactSubmit = styled.button`
     height: 20%;
     background: #1f1e1f;
+    background: transparent;
     color: #ebe6f0;
 
     font-size: 16px;

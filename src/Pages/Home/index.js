@@ -1,6 +1,9 @@
 import React from 'react'
-import { Container, Slogan, BodyContainer, BodyWindow, Option, Pad, Square, Triangle, Flex } from './HomeElements'
+import { Container, BodyContainer, BodyWindow, Option, Pad, BG, TextWindow, Text, BGCont } from './HomeElements'
 import ContactForm from '../../General/Components/ContactForm'
+
+import Globe from '../../General/Images/globe.png'
+import './textstyles.css'
 
 export default function Home() {
 
@@ -8,33 +11,28 @@ export default function Home() {
     <Container
       id='home'
     >
-
-      <Slogan>
-        Modern Websites Made Simplistic
-      </Slogan>
-      
-        <Square
-          style={{zIndex: '0'}}
-        />
-        <Triangle
-          style={{zIndex: '0'}}
-        />
-
         <div style={{position: 'absolute', zIndex: '1', width: '100vw'}}>
         <BodyContainer>
           <BodyWindow>
-            <Flex>
-              Choose a home for your business with “Simplistic”
-            </Flex>
-            <Flex>
-              We will build you state of the art website applications with your business and processes in mind
-            </Flex>
+            <TextWindow>
+            <Text
+            style={{fontSize: '28px', fontWeight: '820'}}>
+              Modern Websites Made 
+              <br />
+              <span class="bold sColour">Simple</span>
+            </Text>
+            <Text
+              style={{marginTop: '2vh'}}
+            >
+              Get an online presence for your business, with limitless design potential and advanced functionality to ensure the best experience for your customers.
+            </Text>
+            </TextWindow>
           </BodyWindow>
-          <BodyWindow> 
-            <Flex>
-              Register your interest
-            </Flex>
-            <ContactForm />
+          <BodyWindow>
+            <BGCont>
+              <BG src={Globe}/>
+            </BGCont>
+            {/* <ContactForm /> */}
           </BodyWindow>
         </BodyContainer>
 

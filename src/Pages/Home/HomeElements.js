@@ -2,18 +2,16 @@ import styled from 'styled-components';
 import { Link as LinkS } from "react-scroll";
 
 export const Container = styled.div`
-    position: relative;
-    padding-top: 12vh;
-    height: 88vh;
 
-    // border: 1px solid #000000;
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        padding-top: 10vh;
+        height: 90vh;
+    }
+    
+    // border: 1px solid white;
 `;
 
-export const Slogan = styled.b`
-    display: flex;
-    justify-content: center;
-    margin-top: 4vh;
-`;
 
 export const Option = styled(LinkS)`
     display: flex;
@@ -24,9 +22,10 @@ export const Option = styled(LinkS)`
     width: 84vw;
     margin-left: 8vw;
     margin-right: 8vw; 
-    margin-top: 6vh;
+    // margin-top: 4vh;
 
-    border: 1.5px solid #a09ea0;
+    border: 2px solid #A09EA0;
+    // border-radius: 6px;
 
     :hover {
         background: #3c3a3c;
@@ -36,6 +35,7 @@ export const Option = styled(LinkS)`
         /*desktop*/
         height: 6vh;
         width: 40vw;
+        margin-top: 3vh;
         margin-left: 30vw;
         margin-right: 30vw; 
     }
@@ -47,17 +47,24 @@ export const BodyContainer = styled.div`
     flex-direction: column;
     height: 64vh;
 
-    // border: 1px solid #FF0000;
+    // border: 1px solid red;
+    border: 4px solid #A09EA0;
+    // border-radius: 20px;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        height: 60vh;
         flex-direction: row;
+        height: 70vh;
+        margin-top: 3vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 `;
 
 export const BodyWindow = styled.div`
     height: 100%;
+    overflow: hidden;
+    // border: 1px solid blue;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
@@ -65,54 +72,34 @@ export const BodyWindow = styled.div`
     } 
 `;
 
-export const Flex = styled.div`
+export const TextWindow = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 2vh;
+
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+`;
+
+export const Text = styled.text`
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        margin-top: 8vh;
     }
 `;
 
-export const Square = styled.div`
-    position: absolute;
-
-    top: 12vh;
-    height: 25vh;
-    width: 100vw;
-
-    background: #484232;
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        top: 10vh;
-        height: 90vh;
-        width: 36vw;
-    }
+export const BGCont = styled.div`
+    display: flex;
+    justify-content: end;
 `;
 
-export const Triangle = styled.div`
-    position: absolute;
-
-    top: 36.99vh;
-    width: 0; 
-    height: 0; 
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-top: 10vh solid #484232;
+export const BG = styled.img`
+    height: 88%;
+    margin-right: -250px;
+    margin-top: -120px;
     
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        left: 36vw;
-        top: 10vh;
-        width: 0;
-        height: 0;
-        border-top: 45vh solid transparent;
-        border-bottom: 45vh solid transparent;
-        border-left: 10vw solid #484232;
-    }
+    // border: 1px solid green;
 `;
 
 export const Pad = styled.div`
