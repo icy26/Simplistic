@@ -12,6 +12,7 @@ export const Bar = styled.nav`
   z-index: 2;
   background: #1f1e1f;
   opacity: 0.99;
+  top: 0;
 
   border-bottom: 1.5px solid #1a191a;
 

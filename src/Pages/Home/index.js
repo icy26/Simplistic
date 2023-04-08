@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, BodyContainer, BodyWindow, Option, Pad, BG, TextWindow, Text, BGCont } from './HomeElements'
-import ContactForm from '../../General/Components/ContactForm'
 
 import Globe from '../../General/Images/globe.png'
 import './textstyles.css'
@@ -17,12 +16,13 @@ export default function Home() {
             <TextWindow>
             <Text
             style={{fontSize: '28px', fontWeight: '820'}}>
-              Modern Websites Made 
-              <br />
-              <span class="bold sColour">Simple</span>
+              Modern Websites
+              <br /> 
+              Made
+              <span class="bold sColour"> Simple</span>
             </Text>
             <Text
-              style={{marginTop: '2vh'}}
+              style={{marginTop: '1.5vh'}}
             >
               Get an online presence for your business, with limitless design potential and advanced functionality to ensure the best experience for your customers.
             </Text>
@@ -32,7 +32,6 @@ export default function Home() {
             <BGCont>
               <BG src={Globe}/>
             </BGCont>
-            {/* <ContactForm /> */}
           </BodyWindow>
         </BodyContainer>
 

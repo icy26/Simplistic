@@ -2,62 +2,34 @@ import styled from 'styled-components';
 import { Link as LinkS } from "react-scroll";
 
 export const Container = styled.div`
+    height: 88vh;
+    padding-top: 12vh;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
-        padding-top: 10vh;
         height: 90vh;
+        padding-top: 10vh;
     }
     
     // border: 1px solid white;
-`;
-
-
-export const Option = styled(LinkS)`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 4.5vh;
-    width: 84vw;
-    margin-left: 8vw;
-    margin-right: 8vw; 
-    // margin-top: 4vh;
-
-    border: 2px solid #A09EA0;
-    // border-radius: 6px;
-
-    :hover {
-        background: #3c3a3c;
-    }
-
-    @media only screen and (min-width: 720px) {
-        /*desktop*/
-        height: 6vh;
-        width: 40vw;
-        margin-top: 3vh;
-        margin-left: 30vw;
-        margin-right: 30vw; 
-    }
 `;
 
 export const BodyContainer = styled.div`
     display: flex;
 
     flex-direction: column;
-    height: 64vh;
+    height: 70vh;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 
-    // border: 1px solid red;
-    border: 4px solid #A09EA0;
-    // border-radius: 20px;
+    border: 2px solid #A09EA0;
 
     @media only screen and (min-width: 720px) {
         /*desktop*/
         flex-direction: row;
-        height: 70vh;
-        margin-top: 3vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
+
+        border: 4px solid #A09EA0;   
     }
 `;
 
@@ -78,8 +50,16 @@ export const TextWindow = styled.div`
     justify-content: center;
 
     height: 100%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
 `;
 
 export const Text = styled.text`
@@ -95,11 +75,41 @@ export const BGCont = styled.div`
 `;
 
 export const BG = styled.img`
-    height: 88%;
-    margin-right: -250px;
-    margin-top: -120px;
-    
-    // border: 1px solid green;
+    margin-right: -240px;
+    margin-top: -80px;
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        height: 88%;
+        margin-right: -300px;
+    }
+`;
+
+export const Option = styled(LinkS)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 4.5vh;
+    width: 84vw;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+
+    border: 2px solid #A09EA0;
+
+    :hover {
+        background: #3c3a3c;
+    }
+
+    @media only screen and (min-width: 720px) {
+        /*desktop*/
+        height: 6vh;
+        width: 40vw;
+        margin-top: 3vh;
+        margin-left: 30vw;
+        margin-right: 30vw; 
+    }
 `;
 
 export const Pad = styled.div`
