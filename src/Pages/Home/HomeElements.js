@@ -10,8 +10,6 @@ export const Container = styled.div`
         height: 90vh;
         padding-top: 10vh;
     }
-    
-    // border: 1px solid white;
 `;
 
 export const BodyContainer = styled.div`
@@ -53,7 +51,6 @@ export const TextWindow = styled.div`
     margin-left: 10%;
     margin-right: 10%;
     
-
     @media only screen and (min-width: 720px) {
         /*desktop*/
         margin-left: 20%;
