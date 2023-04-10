@@ -1,6 +1,8 @@
 import React from 'react'
-import { Container, Slogan, BodyContainer, BodyWindow, OptionContainer, Option, Pad, Flex } from './HomeElements'
-import ContactForm from '../../General/Components/ContactForm'
+import { Container, BodyContainer, BodyWindow, Option, Pad, BG, TextWindow, Text, BGCont } from './HomeElements'
+
+import Globe from '../../General/Images/globe.png'
+import './textstyles.css'
 
 export default function Home() {
 
@@ -8,34 +10,40 @@ export default function Home() {
     <Container
       id='home'
     >
-      <Slogan>
-        SIMPLISTIC
-      </Slogan>
+        <div style={{position: 'absolute', zIndex: '1', width: '100vw'}}>
+        <BodyContainer>
+          <BodyWindow>
+            <TextWindow>
+            <Text
+            style={{fontSize: '28px', fontWeight: '820'}}>
+              Modern Websites
+              <br /> 
+              Made
+              <span class="bold sColour"> Simple</span>
+            </Text>
+            <Text
+              style={{marginTop: '1.5vh'}}
+            >
+              Get an online presence for your business, with limitless design potential and advanced functionality to ensure the best experience for your customers.
+            </Text>
+            </TextWindow>
+          </BodyWindow>
+          <BodyWindow>
+            <BGCont>
+              <BG src={Globe}/>
+            </BGCont>
+          </BodyWindow>
+        </BodyContainer>
 
-      <BodyContainer>
-        <BodyWindow>
-
-        </BodyWindow>
-        <BodyWindow>
-          <Flex>
-            <b>
-              Register your interest
-            </b>
-          </Flex>
-          <ContactForm />
-        </BodyWindow>
-      </BodyContainer>
-
-      <OptionContainer>
-        <Option
-          activeClass='active'
-          smooth
-          spy
-          to='learn_more'
-        >
-          Learn More
-        </Option>
-      </OptionContainer>
+          <Option
+            activeClass='active'
+            smooth
+            spy
+            to='learn_more'
+          >
+            Our Service
+          </Option>
+      </div>
 
       {/* Pad used for scrolling */}
       <Pad

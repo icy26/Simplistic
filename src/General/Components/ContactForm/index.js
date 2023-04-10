@@ -1,9 +1,12 @@
-import { Outer, ContactInput, ContactSubmit } from './ContactFormElements'
+import React, { useState } from 'react';
+import { Blur, Inner, ContactInput, ContactSubmit, ContactLabel } from './ContactFormElements'
 
 import { API } from 'aws-amplify'
 import { createProspect } from '../../../graphql/mutations'
 
 export default function ContactForm() {
+
+    const [isToggled, setIsToggled] = useState(true);
 
     const handleFormSubmit = async (e) => {
         try {
@@ -16,8 +19,11 @@ export default function ContactForm() {
             console.log(email);
             console.log(message);
 
+            setIsToggled(!isToggled);
+
         } catch (error) {
             console.log('Error', error);
+            setIsToggled(!isToggled);
         }
     }
 
@@ -43,25 +49,43 @@ export default function ContactForm() {
 
     return (
         <form onSubmit={handleFormSubmit}>
-            <Outer>
-                <ContactInput
-                    name='name'
-                    placeholder='Your name'
+            {isToggled
+            ?
+            <ContactLabel
+                onClick={() => setIsToggled(!isToggled)}
+            >
+                Get in touch
+            </ContactLabel>
+            :
+            <>
+                <Blur 
+                    onClick={() => setIsToggled(!isToggled)}
                 />
-                <ContactInput
-                    name='email'
-                    placeholder='Your email'
-                />
-                <ContactInput
-                    name='message'
-                    placeholder='Your message'
-                />
+                <Inner>
+                    <text
+                        style={{textAlign: 'center', marginTop: '2vh', fontWeight: '560'}}
+                    >
+                        Get in contact with us!
+                    </text>
+                    <ContactInput
+                        name='name'
+                        placeholder='Your name'
+                    />
+                    <ContactInput
+                        name='email'
+                        placeholder='Your email'
+                    />
+                    <ContactInput
+                        name='message'
+                        placeholder='Your message'
+                    />
 
-                <ContactSubmit type='submit' value='Submit'>
-                    Submit
-                </ContactSubmit>
-            </Outer>
-
+                    <ContactSubmit type='submit' value='Submit'>
+                        Submit
+                    </ContactSubmit>
+                </Inner>
+            </>
+            }
         </form>
     );
 }
