@@ -15,25 +15,6 @@ export default function ContactForm() {
             const email = e.target.email.value
             const message = e.target.message.value
 
-            console.log(name);
-            console.log(email);
-            console.log(message);
-
-            setIsToggled(!isToggled);
-
-        } catch (error) {
-            console.log('Error', error);
-            setIsToggled(!isToggled);
-        }
-    }
-
-    const handleFormSubmit2 = async (e) => {
-        try {
-            e.preventDefault()
-            const name = e.target.name.value
-            const email = e.target.email.value
-            const message = e.target.message.value
-
             await API.graphql({
                 query: createProspect,
                 variables: {
@@ -42,8 +23,11 @@ export default function ContactForm() {
                     }
                 }
             })
+
+            setIsToggled(!isToggled);
         } catch (error) {
             console.log('error adding details to db', error);
+            setIsToggled(!isToggled);
         }
     }
 

@@ -1,5 +1,6 @@
 {
   "AppSyncApiName": "simplistic",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-04-10T05:52:51.902Z"
 }
